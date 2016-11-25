@@ -1,0 +1,273 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   body {
+    background: linear-gradient(to bottom, #CED6D8 5%,  #FFFFFF 25%);
+    color: #444;
+    font-size: 14px;
+    font-family: 'Arial';
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   .wrapper {
+    width: 776px;
+    margin: 0 auto;
+}
+
+.container {
+    clear: both;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+   header .site-name {
+    float: left;
+    margin-top: 40px;
+}
+
+header .site-name a {
+    display: block;
+    overflow: hidden;
+    color: #939598;
+    font-family: "A F Klampenborg";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 19px;
+    text-transform: lowercase;
+}
+
+header .site-name img {
+    float: left;
+    width: 175px;
+    height: 83px;
+}
+
+header .site-name span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 101px;
+}
+
+header .top-nav {
+    position: relative;
+    top: -5px; 
+    float: right;
+    padding: 7px 22px 5px;
+    background: #ffffff;
+    border-radius: 10px 10px 20px 20px;
+}
+
+header .top-nav li {
+    display: inline-block;
+
+}
+
+header .top-nav li a {
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #747474;
+    text-transform: lowercase;
+    border-left: 1px solid #959595;
+}
+
+header .top-nav li:first-child a {
+    border-left: 0;
+}
+
+header .top-nav li.active a {
+    color: #02a4fa;
+}
+
+header .site-desription {
+    float: right;
+    clear: right;
+    margin: 35px 30px 0 0;
+    color: #646464;
+    font-family: Helios;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header .main-nav {
+    float: right;
+    clear: right;
+    overflow: hidden;
+    margin: 42px 27px 0 0;
+    border: 1px solid #939598;
+    border-radius: 35px 35px 0 0;
+}
+
+header .main-nav li {
+    float: left;
+}
+
+header .main-nav li a {
+    box-sizing: border-box;
+    display: block;
+    min-width: 135px;
+    padding: 15px 20px;
+    color: #939598;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-left: 1px solid #939598;
+}
+
+header .main-nav li:first-child a {
+    border-left: none;
+}
+
+header .main-nav li.active {
+    background: #ffffff;
+}
+
+main.content .article h5 {
+    color: #03a7fe;
+    font-size: 18px;
+}
+
+article.article h3 {
+    padding-bottom: 12px;
+    color: #010101;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+    border-bottom: 1px solid #03a7fe;
+}
+
+article.article p {
+    padding: 14px 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+}
+
+article.article img {
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+footer {
+    border-top: 1px solid #A4A4A6;
+}
+
+footer .copyright {
+    float: right;
+    padding-left: 12px;
+    width: 503px;
+    height: 30px;
+    color: #78797b;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 33px;
+    background: #D9DADA;
+    border-radius: 0 0 20px 20px;
+}
+
+footer .copyright a {
+    color: #000000;
+}
+
+footer .copyright a:hover {
+    color: #03a7fe;
+}
+
+footer .copyright a img {
+    float: right;
+    margin: 7px 12px 9px;
+}

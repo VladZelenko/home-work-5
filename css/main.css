@@ -1,0 +1,479 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+body {
+    background: linear-gradient(to bottom, #CED6D8 5%,  #FFFFFF 25%);
+    font-size: 14px;
+    font-family: 'ArialRegular';
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   .wrapper {
+    width: 776px;
+    margin: 0 auto;
+}
+
+.container {
+    clear: both;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header .site-name {
+    float: left;
+    margin-top: 40px;
+}
+
+header .site-name a {
+    display: block;
+    overflow: hidden;
+    color: #939598;
+    font-family: "A F Klampenborg";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 19px;
+    text-transform: lowercase;
+}
+
+header .site-name img {
+    float: left;
+    width: 175px;
+    height: 83px;
+}
+
+header .site-name span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 101px;
+}
+
+header .top-nav {
+    position: relative;
+    top: -5px; 
+    float: right;
+    padding: 7px 22px 5px;
+    background: #ffffff;
+    border-radius: 10px 10px 20px 20px;
+}
+
+header .top-nav li {
+    display: inline-block;
+
+}
+
+header .top-nav li a {
+    padding: 0 10px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #747474;
+    text-transform: lowercase;
+    border-left: 1px solid #959595;
+}
+
+header .top-nav li:first-child a {
+    border-left: 0;
+}
+
+header .top-nav li.active a {
+    color: #02a4fa;
+}
+
+header .site-desription {
+    float: right;
+    clear: right;
+    margin: 35px 30px 0 0;
+    color: #646464;
+    font-family: Helios;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header .main-nav {
+    float: right;
+    clear: right;
+    overflow: hidden;
+    margin: 42px 27px 0 0;
+    border: 1px solid #939598;
+    border-radius: 35px 35px 0 0;
+}
+
+header .main-nav li {
+    float: left;
+}
+
+header .main-nav li a {
+    box-sizing: border-box;
+    display: block;
+    min-width: 135px;
+    padding: 15px 20px;
+    color: #939598;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-left: 1px solid #939598;
+}
+
+header .main-nav li:first-child a {
+    border-left: none;
+}
+
+header .main-nav li.active {
+    background: #ffffff;
+}
+
+
+
+aside>h4 {
+    margin-bottom: 33px;
+    margin-top: 26px;
+    color: #03a7fe;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+aside h4::after {
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 10px;
+    position: relative;
+    left: 98px;
+    bottom: 13px;
+    background: url("../img/arrow-down.png");
+}
+
+aside .side-nav li {
+    width: 230px;
+    list-style: inside url("../img/arrow-right.png");
+    border-bottom: 1px solid #C3C4C3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+aside .side-nav li:last-child {
+    padding-bottom: 49px;
+}
+
+aside .side-nav li a {
+    display: block;
+    color: #555555;
+    line-height: 33px;
+}
+
+aside .side-nav li a:hover {
+    color: #02a4fa;
+}
+
+aside .container-rss {
+    border-bottom: 1px solid #C3C4C3;
+}
+
+aside .rss {
+    display: block;
+    margin: 15px 63px;
+    width: 102px;
+    height: 33px;
+    background-color: #ffffff;
+    border: 3px solid #ff9600;
+    border-radius: 25px;
+}
+
+aside .rss a::before {
+    content: ' ';
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    left: -26px;
+    top: 23px;
+    background: url("../img/rss.png");
+}
+
+aside .rss a {
+    display: block;
+    padding-left: 50px;
+    margin-top: -17px;
+    height: 33px;
+    line-height: 33px;
+    color: #939598;
+}
+
+aside .rss a:hover {
+    color: #02a4fa;
+}
+
+aside .partners {
+    margin: 30px 50px 110px 55px;
+}
+
+.container>aside {
+    float: left;
+}
+
+main.content {
+    display: block;
+    float: right;
+    margin-top: 64px;
+    width: 528px;
+}
+
+main.content h3 {
+    color: #010101;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 33px;
+}
+main .compains {
+    overflow: hidden;
+}
+main .compains li {
+    border-top: 1px solid #02a4fa;
+    margin-bottom: 18px;
+}
+
+main .compains li dl:last-child {
+    margin-bottom: 18px;
+}
+
+main .compains li:last-child {
+    border-bottom: 1px solid #02a4fa;
+}
+
+main .compains li img {
+    float: left;
+    margin: 17px 21px 0 11px;
+}
+
+main .compains h4 {
+    margin-bottom: 5px;
+    color: #03a7fe;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.characterstics dt {
+    display: block;
+    float: left;
+    padding-left: 10px;
+    width: 186px;
+    overflow: hidden;
+    color: #505050;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    background: #dfe5e6;
+    border-bottom: 2px solid #ffffff;
+}
+
+.characterstics dd {
+    display: block;
+    width: 196px;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    background: #dfe5e6;
+    border-bottom: 2px solid #ffffff;
+}
+
+dl .item-seo {
+    margin-left: 134px;
+    border-bottom: none;
+}
+
+.characterstics dd.company-info {
+    width: 394px;
+    border-bottom: none;
+    margin-left: 134px;
+}
+
+.characterstics dd.company-info a {
+    padding-left: 10px;
+}
+
+.characterstics dd.phone {
+    background: #ecf0f1;
+}
+
+.characterstics dd.email {
+    background: #ecf0f1;
+}
+
+.phone a::before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/phone.png");
+}
+
+.skype::before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/skype.png");
+}
+
+.email::before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/mail.png");
+}
+
+.twitter::before {
+    content: ' ';
+    display: block;
+    float: left;
+    margin-left: 200px;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/twitter.png");
+}
+
+
+
+footer {
+    border-top: 1px solid #A4A4A6;
+}
+
+footer .copyright {
+    float: right;
+    padding-left: 12px;
+    width: 503px;
+    height: 30px;
+    color: #78797b;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 33px;
+    background: #D9DADA;
+    border-radius: 0 0 20px 20px;
+}
+
+footer .copyright a {
+    color: #000000;
+}
+
+footer .copyright a:hover {
+    color: #03a7fe;
+}
+
+footer .copyright a img {
+    float: right;
+    margin: 7px 12px 9px;
+}
